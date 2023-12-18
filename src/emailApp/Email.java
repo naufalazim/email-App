@@ -31,7 +31,7 @@ public class Email {
 		//Call password method:
 		this.password = randomPassword(defaultPwd);
 		System.out.println("Password adalah: " + this.password);
-		Scanner in = new Scanner(System.in);
+
 		
 	}
 	

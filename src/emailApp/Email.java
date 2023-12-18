@@ -40,7 +40,7 @@ public class Email {
 		if(depC == 1) { return "IT";}
 		else if (depC == 2) {return "HR";}
 		else if (depC == 3) {return "Akaun";}
-		else {return "Tiada";}
+		else {return " ";}
 	}
 	
 	// Generate random password;

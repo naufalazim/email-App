@@ -11,10 +11,10 @@ public class Email {
 	private String password;
 	private String department;
 	private String email;
-	private int mailboxCapacity;
+	private int mailboxCapacity = 50;
 	private int defaultPwd = 10;
 	private String alternateEmail;
-	private String companySuffix = "naumas.my";
+	private String companySuffix = "nxfal.com";
 	
 	
 	//Constructor to receive the first name and last name;
@@ -59,7 +59,7 @@ public class Email {
 	// Generate random password;
 	private String randomPassword(int length) {
 		
-		String passwordSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456!@#$%";
+		String passwordSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456!@#$%abcdefghijklmnopqrstuvwxyz";
 		
 		char[] password = new char[length];
 		for(int i = 0; i < length ; i++) {
@@ -73,10 +73,32 @@ public class Email {
 	
 	
 	// Set the mailbox capacity;
+	public void setMailboxCapacity(int capacity) {
+		this.mailboxCapacity = capacity;
+	}
+	
+	public int getMailboxCapacity() {
+		return mailboxCapacity;
+	}
 	
 	// Set the alternate email;
+	public void setAlternateEmail(String altEmail) {
+		this.alternateEmail = altEmail;
+	}
+	
+	public String getAlternateEmail() {
+		return alternateEmail;
+	}
+	
 	
 	// Change the password;
+	public void changePassword(String pwd) {
+		this.password = pwd;
+	}
+	
+	public String getPassword() {
+		return password;
+	}
 	
 	
 }

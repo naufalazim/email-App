@@ -1,3 +1,5 @@
 <h1>Email Generator Application</h1>
 
-<p>It generated email for you</p>
+Generated email based on prompt you input. 
+
+
